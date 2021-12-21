@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 class="one">Query selector all</h2>
+<p class="one">Hi everyone</p> 
+
+<p>Docment Object Model</p>
+
+<button onclick="query()">click</button>
+
+
+<script>
+
+function query() {
+  var x, i;
+  x = document.querySelectorAll(".one");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "red";
+    x[i].style.color = "black";
+  }
+}
+</script>
+
+</body>
+</html>
